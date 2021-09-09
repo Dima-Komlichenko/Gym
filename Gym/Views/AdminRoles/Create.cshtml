@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityRole>
+
+@{ ViewData["Title"] = "Admin Role Create";
+                Layout = "~/Views/Shared/_LayoutAdmin.cshtml"; }
+
+<h1>Role Creating</h1>
+
+<form asp-action="RoleCreate" method="post">
+    <div class="form-group">
+        <label for="name">Новая роль</label>
+        <input name="name" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+
